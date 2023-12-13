@@ -31,7 +31,8 @@ jobs:
       with:
         push: true
         tags: yplearn.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_6a6859c3ef0e4c17b934996f651fc0e1 }}/mistral-playground:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./docker/Dockerfile
+        context: ../
 
   deploy:
     runs-on: ubuntu-latest
