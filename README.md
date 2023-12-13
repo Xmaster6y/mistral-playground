@@ -1,6 +1,6 @@
 # Mistral Playground
 
-Simple playground wrapper around Mistral API.
+Simple playground wrapper around Mistral API, deployed at [mistral-playground.azurewebsites.net](https://mistral-playground.azurewebsites.net/).
 
 ## Installation Guide
 
