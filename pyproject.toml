@@ -25,6 +25,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.dependencies]
 python = "^3.9"
 gradio = "^4.9.0"
+mistralai = {git = "https://github.com/mistralai/client-python"}
 
 [tool.poetry.group.dev]
 optional = true
