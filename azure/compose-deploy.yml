@@ -1,0 +1,6 @@
+version: '3'
+services:
+  gradio:
+    image: <ACR_NAME>.azurecr.io/mistral-playground:<RELEASE_NAME>
+    ports:
+      - "80:8000"
