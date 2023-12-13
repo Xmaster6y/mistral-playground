@@ -25,7 +25,7 @@ RUN mkdir -p /service/app
 COPY app /service/app
 RUN mkdir -p /service/src
 COPY src /service/src
-EXPOSE 8000
+EXPOSE 80
 COPY docker/start.sh ./
 RUN chmod +x start.sh
 ENTRYPOINT ["/code/start.sh"]
