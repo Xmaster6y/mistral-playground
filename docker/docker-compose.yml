@@ -1,0 +1,10 @@
+version: '3'
+services:
+  gradio:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8000:8000"
+    stdin_open: true
+    tty: true
