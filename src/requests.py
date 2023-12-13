@@ -14,8 +14,12 @@ def get_stream_chat_completion(
         messages.append(ChatMessage(role="system", content=system))
     for chat in chat_history:
         human_message, bot_message = chat
-        messages.append(ChatMessage(role="user", content=human_message))
-        messages.append(ChatMessage(role="assistant", content=bot_message))
+        messages.extend(
+            (
+                ChatMessage(role="user", content=human_message),
+                ChatMessage(role="assistant", content=bot_message),
+            )
+        )
     messages.append(ChatMessage(role="user", content=message))
     client = MistralClient(api_key=api_key)
     for chunk in client.chat_stream(
