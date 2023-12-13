@@ -30,3 +30,5 @@ jobs:
     - name: Run tests
       run: |
         make tests
+      env:
+        MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
